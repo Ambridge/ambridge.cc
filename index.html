@@ -4,20 +4,46 @@
     <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
     <style>
         * { margin: 0; padding: 0; font-weight: normal; }
-        body { 
-            margin: 0; 
-            padding: 20px; 
+        body {
+            margin: 0;
+            padding: 28pt;
             background: black;
+            color: #ccc;
         }
         body, table {
-            font: normal 24pt/30pt VT323, monospace;
+            font: normal 24pt/28pt VT323, monospace;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
         }
         td {
-            padding: 0 20px 10px 0;
             vertical-align: top;
         }
         h1, h2 {
-            padding: 0 0 0.3em;
+            font-size: 24pt;
+            line-height: 30pt;
+        }
+        a {
+            color: yellowgreen;
+            text-decoration: none;
+        }
+        b {
+            color: white;
+        }
+        blink {
+            animation: blink 1s steps(5, start) infinite;
+            -webkit-animation: blink 1s steps(5, start) infinite;
+        }
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+        @-webkit-keyframes blink {
+            to {
+                visibility: hidden;
+            }
         }
     </style>
 </head>
@@ -35,7 +61,7 @@
     <tr>
         <td>What</td>
         <td>Ambridge Computer Club's fifth Evening Session!<br>
-        <b style="color: red;">Beginners welcome! :-)</b>
+            <b>Beginners welcome! :-)</b>
         </td>
     </tr>
     <tr>
@@ -52,10 +78,12 @@
         <td>Computers are fun! Hanging out is fun! Ambridge is fun! :D</td>
     </tr>
     <tr>
-        <td>More Info</td>
+        <td>More Info&nbsp;&nbsp;</td>
         <td><a href="mailto:dmk246@hotmail.com">"Dana" &lt;dmk246@hotmail.com&gt;</a></td>
     </tr>
 </table>
+
+<p>C:\&gt;<blink>_</blink></p>
 
 </body>
 </html>
